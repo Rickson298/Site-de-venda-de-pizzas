@@ -425,3 +425,24 @@ h1 {
         display:block;
     }
 }
+
+ ::-webkit-scrollbar {
+    background-color: rgba(20, 16, 16, 0.1);
+     width: 15px;
+    
+     transition: all linear 0.5s;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background-color: rgba(0, 0, 0, 0.4);
+     transition: all linear 0.5s;
+     
+     border-radius: 10px;
+     
+ }
+ ::-webkit-scrollbar-thumb:hover {
+     background-color: rgb(126, 5, 5);
+     border: 1px solid rgb(179, 120, 120);
+     border-radius: 10px;
+    
+ }
