@@ -37,8 +37,9 @@ header {
 .menu-closer {
     width:32px;
     height:32px;
-    display:none;
+    display:block;
     font-size: 30px;
+    cursor: pointer;
 }
 
 aside {
@@ -373,10 +374,7 @@ h1 {
         width:100vw;
     }
 
-    .menu-closer {
-        display:block;
-    }
-
+  
     .pizzaWindowArea {
         justify-content:flex-start;
         align-items: flex-start;
@@ -429,14 +427,11 @@ h1 {
  ::-webkit-scrollbar {
     background-color: rgba(20, 16, 16, 0.1);
      width: 15px;
-    
      transition: all linear 0.5s;
  }
 
  ::-webkit-scrollbar-thumb {
      background-color: rgba(0, 0, 0, 0.4);
-     transition: all linear 0.5s;
-     
      border-radius: 10px;
      
  }
@@ -444,5 +439,5 @@ h1 {
      background-color: rgb(126, 5, 5);
      border: 1px solid rgb(179, 120, 120);
      border-radius: 10px;
-    
+     
  }

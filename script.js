@@ -11,6 +11,10 @@ const qsa = (dqsa) => {
 return document.querySelectorAll(dqsa);
 };
  
+function remover(){
+    qs('aside').classList.remove('show')  
+    qs('aside').style.left = "100vw"  
+}
 
 pizzaJson.map (
     (item, index)=>{
@@ -174,7 +178,7 @@ pizzaJson.map (
         qs('.total span:last-child').innerHTML = `R$ ${total.toFixed(2)}`
 
     } else {
-        qs('aside').classList.remove('show')  
-        qs('aside').style.left = "100vw"  
+        remover() 
         }
         }
+    
